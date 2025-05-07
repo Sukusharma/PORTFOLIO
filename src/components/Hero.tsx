@@ -3,11 +3,13 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-scroll';
 import { ArrowRight, Github, Linkedin, Mail } from 'lucide-react';
 import { TypeAnimation } from 'react-type-animation';
+import sukuImg from '../assets/images/suku.png'; 
+
 
 const Hero: React.FC = () => {
   return (
     <section id="home" className="min-h-screen relative flex items-center">
-      {/* Cyberpunk Background with Matrix effect */}
+     
       <div className="absolute inset-0">
         <img 
           src="https://i.ibb.co/m5L2FzSq/20563839.jpg"
@@ -127,7 +129,7 @@ const Hero: React.FC = () => {
               <div className="w-96 h-96 sm:w-[450px] sm:h-[450px] rounded-full overflow-hidden border-4 border-primary/30 relative group 
   ring-8 ring-pink-500 shadow-[0_0_60px_20px_rgba(255,105,180,0.8)] transition-all duration-500">
                 <img 
-                  src="public/suku.png"
+                  src={sukuImg}
                   alt="Sukanya Sharma" 
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
